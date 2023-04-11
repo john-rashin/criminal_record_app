@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".policeDepartment">
+
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="ADD POLICE DEPARTMENT"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.019" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="391dp"
+        android:layout_height="154dp"
+        android:adjustViewBounds="true"
+        android:contentDescription="Login Logo"
+        android:scaleType="centerCrop"
+        android:src="@drawable/jail"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.8"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/stationName"
+        android:layout_width="320dp"
+        android:layout_height="45dp"
+        android:background="@drawable/custom_input"
+        android:drawableStart="@drawable/police_station_svgrepo_com"
+        android:drawablePadding="8dp"
+        android:ems="10"
+        android:hint="STATION NAME"
+        android:inputType="textPostalAddress"
+        android:padding="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.394" />
+
+    <EditText
+        android:id="@+id/stationAddress"
+        android:layout_width="320dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="75dp"
+        android:background="@drawable/custom_input"
+        android:drawableStart="@drawable/add_location"
+        android:drawablePadding="8dp"
+        android:ems="10"
+        android:hint="STATION ADDRESS"
+        android:inputType="textPostalAddress"
+        android:padding="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/stationName"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/departmentBtn"
+        android:layout_width="260dp"
+        android:layout_height="50dp"
+        android:background="@drawable/custom_btn"
+        android:text="ADD DEPARTMENT"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/stationName"
+        app:layout_constraintVertical_bias="0.502" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
